@@ -1,14 +1,10 @@
-
-
-
-def classify(tree, data):
-  
-
-
-
-
 from c45 import c45
 import sys
+import numpy as np
+
+# TODO: Learn how to traverse a tree and classify data
+def classify(tree, data):
+  return []
 
 args = sys.argv[1:]
 
