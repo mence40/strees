@@ -6,17 +6,20 @@ import numpy as np
 def classify(tree, data):
   return []
 
+# input/output samples path, depth, prep_atr
 args = sys.argv[1:]
 
-tree = c45(args[0], args[1], args[2])
-
-# starts out column wise
-test_data = []
-
-with open(args[3], 'r') as f:
+input_data = []
+with open(args[0], 'r') as f:
   for line in f:
-    test_data.append(line.split(","))
+    input_data.append(line.split(","))
     
+test_data = input_data[-2:]
+input_data = input_data[:len(input_data) - 2]
+
+tree = c45(input_data, args[1], args[2])
+    
+  
 classifications = classify(tree, test_data)
 
 condensed_labels = []
