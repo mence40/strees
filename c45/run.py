@@ -1,6 +1,5 @@
 from c45 import c45
 import sys
-import numpy as np
 
 # TODO: Learn how to traverse a tree and classify data
 def classify(tree, data):
@@ -44,20 +43,3 @@ for i in range(len(classificaitons)):
     
 print(correct)
 print(incorrect)
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
